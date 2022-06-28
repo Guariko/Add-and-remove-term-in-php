@@ -1,0 +1,267 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+                'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: var(--main-color);
+}
+
+:root {
+    --main-color: #20273a;
+    --second-color: #2d3447;
+    --third-color: #313c4e;
+    --head-color: #184f66;
+    --term-color: #da5a80;
+    --content-color: #7e8396;
+}
+
+.circle {
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+
+.table {
+    border: 0.2rem solid rgba(0,0,0,0.1);
+    border-collapse: collapse;
+    background: var(--second-color);
+    width: fit-content;
+}
+
+.table__row td {
+    color: violet;
+    text-transform: capitalize;
+    padding: 1rem 2rem 1rem 1rem;
+    font-size: 2rem;
+    text-align: left;
+    color: #9191c0;
+}
+
+.table__head,
+.table__row td{
+    border: 0.2rem solid rgba(0,0,0,0.2);
+}
+
+.table__head {
+    font-size: 4rem;
+    color: rgb(94, 94, 121);
+    text-transform: capitalize;
+    padding: 1.5rem;
+}
+
+.table__row td:first-of-type {
+    color: var(--content-color);
+}
+
+.table__row td a {
+    color: var(--term-color);
+}
+
+.delete__main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete__main h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.delete__main h1 mark {
+    background: none;
+    color: rgb(209, 88, 88);
+}
+
+.delete__main div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.delete__main form button {
+    font-size: 6rem;
+    color: #fff;
+    background: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: color .2s linear;
+}
+
+.delete__main form button:hover {
+    color: red;
+}
+
+.button {
+    font-size: 4rem;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    transition: color .2s linear;
+}
+
+.button:hover {
+    color: red;
+}
+
+.create {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: fit-content;
+    color: #fff;
+    transition: color .2s linear;
+}
+
+.create:hover {
+    color: green;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 3rem;
+    position: relative;
+}
+
+.create__term {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.create__term input {
+    font-size: 3rem;
+    background: #fff;
+    color: black;
+    padding: 1rem;
+    border-radius: 2rem;
+    max-width: 30rem;
+}
+
+.create__term textarea {
+    font-size: 2rem;
+    background: #fff;
+    color: black;
+    padding: 1rem;
+    border-radius: 2rem;
+    resize: none;
+    height: 12rem;
+}
+
+.go__home,
+.create__term button {
+    font-size: 3rem;
+    background: rgb(144,244,255);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.go__home:hover,
+.create__term button:hover {
+    font-size: 3.1rem;
+    letter-spacing: .1rem;
+}
+
+.go__home {
+    position: absolute;
+    bottom: -20rem;
+    color: black;
+}
+
+.table__row .edit {
+    color: green;
+}
+
+
+.edit__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.edit__main form div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.edit__main form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.edit__main form label {
+    font-size: 4rem;
+    color: green;
+    text-transform: capitalize;
+}
+
+.edit__main form input {
+    font-size: 3rem;
+    color: black;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.edit__main form textarea {
+    font-size: 2.6rem;
+    color: black;
+    padding: 1rem;
+    border-radius: 2rem;
+    height: 12rem;
+}
+
+
+.edit__main form button {
+    font-size: 3rem;
+    color: black;
+    padding: 1rem 3rem;
+    width: fit-content;
+    align-self: center;
+    border-radius: 2rem;
+    background: rgb(144,244,255);
+    transition: all .2s linear;
+    margin-top: 0.4rem;
+}
+
+.edit__main form div:last-of-type {
+    height: 7rem;
+}
+
+.edit__main form button:hover {
+    color: green;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    font-size: 3.2rem;
+}
+
+.edit__main h1 {
+    font-size: 4rem;
+    color: red;
+}
